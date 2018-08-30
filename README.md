@@ -1,6 +1,6 @@
 # Learning-Python
 ## Excel
-Create new Excel workbooks <br />
+Create new Excel workbooks using openpyxl <br />
 Edit cells in workbook <br />
 Iterate through cells <br />
 ## Graphing

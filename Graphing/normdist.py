@@ -24,5 +24,4 @@ plt.plot(x, p, 'g', linewidth = 2)
 plt.plot(x, m, 'b', linewidth = 2)
 title = "Fit results: mu = %.2f,  std = %.2f" % (mu, std)
 plt.title('Histograms of Female and Male Height')
-
 plt.show()

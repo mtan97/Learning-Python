@@ -3,6 +3,7 @@
 #10/17/18
 
 import numpy as np
+import scipy.stats as stats
 from scipy.stats import norm
 import matplotlib.pyplot as plt
 
@@ -24,4 +25,10 @@ plt.plot(x, p, 'g', linewidth = 2)
 plt.plot(x, m, 'b', linewidth = 2)
 title = "Fit results: mu = %.2f,  std = %.2f" % (mu, std)
 plt.title('Histograms of Female and Male Height')
+plt.show()
+
+#Plot quantile-quantiles
+stats.probplot(fheight, dist="norm", plot=plt)
+stats.probplot(mheight, dist="norm", plot=plt)
+plt.title("Normal Q-Q plot")
 plt.show()
